@@ -1,0 +1,81 @@
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 25px;
+  height: 65px;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* BRAND TEXT */
+.brand-text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* NAV LINKS */
+.nav-left a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 10px;
+}
+
+.nav-left a:hover {
+  color: #f0ad4e;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* CART BUTTON */
+.cart-btn {
+  background-color: #f0ad4e;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CART ICON */
+.cart-btn i {
+  margin-right: 6px;
+}
+
+/* ACTIVE CART (when items added) */
+.cart-active {
+  background-color: #ffc107;
+}
+
+.cart-active-icon {
+  color: #000;
+}
+
+/* BADGE */
+.badge {
+  font-size: 12px;
+  padding: 4px 7px;
+  border-radius: 50%;
+}

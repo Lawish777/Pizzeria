@@ -1,0 +1,32 @@
+.checkout-wrapper { display: flex; padding: 40px; background-color: #f4f4f4; gap: 30px; justify-content: center; }
+.cart-section { flex: 2; max-width: 600px; }
+.cart-title { font-family: serif; margin-bottom: 20px; }
+.cart-card { background: white; padding: 20px; border: 1px solid #ddd; }
+
+.cart-item { display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+.item-img { width: 50px; height: 50px; object-fit: contain; margin-right: 15px; }
+
+/* Square Indicator */
+.outer-sq { width: 18px; height: 18px; border: 1px solid; display: flex; align-items: center; justify-content: center; margin-right: 15px; }
+.inner-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.item-info { flex-grow: 1; }
+.item-price { color: #666; font-size: 0.9rem; }
+
+/* Gray Buttons */
+.qty-controls { display: flex; align-items: center; border: 1px solid #ccc; margin-right: 20px; }
+.qty-btn { background: #6c757d; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+.qty-num { width: 30px; text-align: center; font-weight: bold; }
+
+.subtotal-row { text-align: right; padding-top: 20px; font-weight: bold; }
+
+/* Summary Side */
+.summary-section { flex: 1; max-width: 300px; }
+.summary-card { background: white; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; }
+.sum-line { display: flex; justify-content: space-between; margin: 10px 0; }
+.grand-total { display: flex; justify-content: flex-end; font-size: 1.4rem; margin-top: 15px; }
+
+/* Yellow and Black Buttons */
+.action-buttons { display: flex; gap: 10px; }
+.pay-btn { background: #ffc107; border: none; flex: 1; padding: 12px; font-weight: bold; border-radius: 4px; }
+.clear-btn { background: #212529; color: white; border: none; flex: 1; padding: 12px; font-weight: bold; border-radius: 4px; }

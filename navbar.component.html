@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <div class="nav-left">
+    <span class="brand-text">Pizzeria</span>
+
+    <a routerLink="/" class="logo">
+      <img src="assets/OIP.jpg" alt="logo" />
+    </a>
+
+    <a routerLink="/order">Order Pizza</a>
+    <a routerLink="/buildpizza">Build Ur Pizza</a>
+  </div>
+
+  <div class="nav-right">
+    <button class="cart-btn" routerLink="/checkout">
+      <i class="bi bi-cart-fill"></i>
+      Shopping Cart
+      <span class="cart-count-box" *ngIf="cartCount > 0">
+        {{ cartCount }}
+      </span>
+    </button>
+  </div>
+</nav>

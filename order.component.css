@@ -1,0 +1,69 @@
+.order-container {
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns side-by-side */
+  gap: 20px;
+}
+
+.pizza-card {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background: white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-left { width: 65%; }
+.card-right { width: 35%; text-align: center; }
+
+/* THE MARKS */
+.type-mark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.veg-border { border-color: green; }
+.veg-dot { background-color: green; }
+.nonveg-border { border-color: red; }
+.nonveg-dot { background-color: red; }
+
+.header-row { display: flex; align-items: center; }
+.price { font-weight: bold; margin: 10px 0; }
+.info-section { font-size: 0.85rem; color: #555; line-height: 1.4; }
+
+.pizza-img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* BUTTON STYLES */
+.btn-add {
+  background-color: #ffb300;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-remove {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}

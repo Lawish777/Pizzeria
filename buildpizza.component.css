@@ -1,0 +1,56 @@
+
+.build-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* TABLE STYLING */
+.ing-table {
+  width: 60%;
+  margin: 0 auto; /* Centers the table itself */
+  border-collapse: collapse;
+}
+
+.ing-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.img-box img {
+  width: 60px;
+  height: auto;
+}
+
+.info-box { font-weight: bold; }
+.price { margin-left: 10px; font-weight: normal; }
+.orange-text { color: #f0ad4e; font-weight: bold; }
+
+/* CENTERED FOOTER STYLING */
+.footer-container {
+  display: flex;
+  flex-direction: column; /* Stack total above button */
+  align-items: center;    /* Center horizontally */
+  margin-top: 30px;
+}
+
+.total-display {
+  color: #000080; /* Navy Blue */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.build-btn {
+  background-color: #000;
+  color: #ffc107;
+  border: none;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}

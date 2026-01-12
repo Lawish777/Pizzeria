@@ -1,0 +1,32 @@
+<div class="order-container">
+  <div class="pizza-grid">
+    <div class="pizza-card" *ngFor="let p of pizzas">
+      
+      <div class="card-left">
+        <div class="header-row">
+          <h2 class="name">{{ p.name }}</h2>
+          <div class="type-mark" [ngClass]="p.type === 'veg' ? 'veg-border' : 'nonveg-border'">
+            <div class="dot" [ngClass]="p.type === 'veg' ? 'veg-dot' : 'nonveg-dot'"></div>
+          </div>
+        </div>
+
+        <p class="price">₹{{ p.price }}.00</p>
+        
+        <div class="info-section">
+          <p class="desc">{{ p.description }}</p>
+          <p><strong>Ingredients: </strong>{{ p.ingredients }}</p>
+          <p><strong>Toppings: </strong>{{ p.toppings }}</p>
+        </div>
+      </div>
+
+      <div class="card-right">
+        <img [src]="p.image" class="pizza-img" alt="pizza">
+        
+        <button [ngClass]="p.isAdded ? 'btn-remove' : 'btn-add'" (click)="toggleCart(p)">
+          {{ p.isAdded ? 'Remove from Cart' : 'Add to Cart' }}
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

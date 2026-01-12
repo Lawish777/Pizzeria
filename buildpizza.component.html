@@ -1,0 +1,54 @@
+<!-- <div class="build-page">
+  <p class="intro">Pizzeria now gives you options to build your own pizza. Customize your pizza by choosing ingredients from the list given below</p>
+
+  <table class="ing-table">
+    <tr *ngFor="let item of ingredients">
+      <td class="img-box">
+        <img [src]="item.image"  alt="ingredient" 
+       width="60" 
+       height="50" 
+       style="object-fit: contain;">
+      </td>
+      <td class="info-box">
+        <span class="name">{{ item.tname }}</span> <span class="price">₹{{ item.price }}.00</span>
+      </td>
+      <td class="check-box">
+        <input type="checkbox" (change)="updatePrice(item, $event)">
+        <span class="orange-text">Add</span>
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer-container">
+    <h2 class="total-display">Total Cost : ₹{{ totalCost }}</h2>
+    <button class="build-btn">Build Ur Pizza</button>
+  </div>
+</div> -->
+
+<div class="build-page">
+  <p class="intro">Pizzeria now gives you options to build your own pizza. Customize your pizza by choosing ingredients from the list given below</p>
+
+  <table class="ing-table">
+    <tr *ngFor="let item of ingredients">
+      <td class="img-box">
+        <img [src]="item.image" alt="ingredient" 
+             width="60" 
+             height="50" 
+             style="object-fit: contain;">
+      </td>
+      <td class="info-box">
+        <span class="name">{{ item.tname }}</span> 
+        <span class="price">₹{{ item.price }}.00</span>
+      </td>
+      <td class="check-box">
+        <input type="checkbox" (change)="onCheckboxChange(item.price, $event)">
+        <span class="orange-text">Add</span>
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer-container">
+    <h2 class="total-display">Total Cost : ₹{{ totalCost }}</h2>
+    <button class="build-btn" (click)="buildPizza()">Build Ur Pizza</button>
+  </div>
+</div>
